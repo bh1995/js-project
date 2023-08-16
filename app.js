@@ -5,7 +5,9 @@ form.addEventListener('submit', async function (event) {
     event.preventDefault();
 
     const ingredients = document.getElementById('ingredients').value;
-    const apiKey = 'e20378718dfd444d98d7c4f3f10318d3';
+    // const apiKey = 'e20378718dfd444d98d7c4f3f10318d3';
+    // require('dotenv').config();
+    const apiKey = process.env['SPOONACULAR_API_KEY'];
     const url = `https://api.spoonacular.com/recipes/findByIngredients?apiKey=${apiKey}&ingredients=${ingredients}`;
 
     try {

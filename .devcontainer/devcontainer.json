@@ -16,7 +16,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
-	"postCreateCommand": "npm install",
+	"postCreateCommand": "npm install http-server --save-dev && npm install dotenv --save",
 
 	// Configure tool-specific properties.
 	"customizations": {

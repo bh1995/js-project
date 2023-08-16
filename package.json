@@ -9,6 +9,8 @@
     "start": "http-server -p 3000 -a 0.0.0.0"
   },
   "dependencies": {
+    "connect-cors": "^0.5.6",
+    "dotenv": "^16.3.1",
     "express": "^4.16.1"
   },
   "devDependencies": {
