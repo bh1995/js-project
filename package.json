@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "author": "First Last <first.last@example.com>",
-  "main": "server.js",
+  "main": "app.js",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "http-server -p 3000 -a 0.0.0.0"
   },
   "dependencies": {
     "express": "^4.16.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
