@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Recommender</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Search App</title>
+  <style>
+    /* Add your CSS styling here */
+    .recipe-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+    }
+    .recipe-card img {
+      max-width: 100%;
+      height: auto;
+    }
+    /* Add more styles as needed */
+  </style>
 </head>
 <body>
-    <h1>Recipe Recommender</h1>
-    <form id="ingredient-form">
-        <label for="ingredients">Enter Ingredients (comma-separated):</label>
-        <input type="text" id="ingredients" required>
-        <button type="submit">Get Recipes</button>
-    </form>
-    <div id="recipe-results"></div>
-
-    <script src="app.js"></script>
+  <div id="ingredients-input">
+    <label for="ingredient-input">Enter Ingredients (comma-separated):</label>
+    <input type="text" id="ingredient-input" placeholder="E.g. chicken, broccoli, onion">
+    <button id="get-recipes-button">Get Recipes</button>
+  </div>
+  <div id="recipes-container">
+    <!-- Recipe cards will be dynamically generated here -->
+  </div>
+  <script src="app.js">
+  </script> 
 </body>
 </html>
